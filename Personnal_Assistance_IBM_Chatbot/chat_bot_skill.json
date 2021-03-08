@@ -1,0 +1,956 @@
+{
+  "intents": [
+    {
+      "intent": "fanoff",
+      "examples": [
+        {
+          "text": "Fan Off"
+        },
+        {
+          "text": "Please switch off fan"
+        },
+        {
+          "text": "Switch off fan"
+        },
+        {
+          "text": "Turn off fan"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "fanon",
+      "examples": [
+        {
+          "text": "Fan on"
+        },
+        {
+          "text": "On Fan"
+        },
+        {
+          "text": "Please switch on fan"
+        },
+        {
+          "text": "Switch on fan"
+        },
+        {
+          "text": "Turn on fan"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greet",
+      "examples": [
+        {
+          "text": "Hey"
+        },
+        {
+          "text": "Hola"
+        },
+        {
+          "text": "Howdy"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Humidity",
+      "examples": [
+        {
+          "text": "can you tell me the humidity in the room"
+        },
+        {
+          "text": "Humidity in the room"
+        },
+        {
+          "text": "What is the humidity"
+        },
+        {
+          "text": "Whats the Humidity"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "LightOFF",
+      "examples": [
+        {
+          "text": "Light Off"
+        },
+        {
+          "text": "Please switch off light"
+        },
+        {
+          "text": "Switch off Light"
+        },
+        {
+          "text": "Turn Off Light"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Lighton",
+      "examples": [
+        {
+          "text": "Light on"
+        },
+        {
+          "text": "Please switch on light"
+        },
+        {
+          "text": "Switch on Light"
+        },
+        {
+          "text": "Turn on light"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "message",
+      "examples": [
+        {
+          "text": "Message her"
+        },
+        {
+          "text": "Message him"
+        },
+        {
+          "text": "Send a message"
+        },
+        {
+          "text": "Send an SMS"
+        },
+        {
+          "text": "Text a mesage"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "reminder",
+      "examples": [
+        {
+          "text": "Hey set a reminder at"
+        },
+        {
+          "text": "Remind me at"
+        },
+        {
+          "text": "Set a reminder at"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "temperature",
+      "examples": [
+        {
+          "text": "what is temperature like today"
+        },
+        {
+          "text": "What is todays temperature?"
+        },
+        {
+          "text": "Whats todays temperature?"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "fanoff",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "fan off",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "fanoff",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "off fan",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "fanon",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "fan on",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "fanon",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "on fan",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "humidity",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "humid",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "humidity",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "humidity value",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "lightoff",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Light off",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "lightoff",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Off Light",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "lighton",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Light on",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "lighton",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "on light",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "On the Light",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "message",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "message",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "text",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "name",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "divya",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "durga prasad",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "gnaneshwar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "sandeep",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "reminder",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "remind",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "reminder",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "remind me",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "temperature",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "heat",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "temp",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "temperature",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "topic",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "doctor appointment",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "food",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "medicine",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "meeting",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_10_1612263256833",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "May I know whom to send the message"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1612249082179",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1612249082205",
+      "previous_sibling": "handler_9_1612249082205"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1612263312885",
+      "context": {
+        "date": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_10_1612263312949"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1612263356654",
+      "context": {
+        "time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_10_1612263356661"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "About what do you want to set the remainder"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1612342077076",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1612342077078",
+      "previous_sibling": "handler_8_1612342077078"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_6_1612243116088",
+      "event_name": "input",
+      "dialog_node": "handler_1_1612243116116"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "At what time do you want to set the time"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1612263356654",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1612263356661",
+      "previous_sibling": "handler_10_1612263356661"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1612434692544",
+      "event_name": "input",
+      "dialog_node": "handler_3_1612434692544"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1612434692544",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1612434692544",
+      "previous_sibling": "handler_3_1612434692544"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Which day do you want to set the reminder"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1612263312885",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1612263312949",
+      "previous_sibling": "handler_10_1612263312949"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1612342077076",
+      "context": {
+        "topic": "@topic"
+      },
+      "conditions": "@topic",
+      "event_name": "input",
+      "dialog_node": "handler_8_1612342077078"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1612243116088",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1612243116116",
+      "previous_sibling": "handler_1_1612243116116"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1612249082179",
+      "context": {
+        "name": "@name"
+      },
+      "conditions": "@name",
+      "event_name": "input",
+      "dialog_node": "handler_9_1612249082205"
+    },
+    {
+      "type": "standard",
+      "title": "delete",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        },
+        "deleted": "<? context.remove('name') ?>"
+      },
+      "parent": "node_6_1612249059392",
+      "conditions": "@call",
+      "dialog_node": "node_10_1612250699717"
+    },
+    {
+      "type": "frame",
+      "title": "reminder",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@reminder || #reminder",
+      "dialog_node": "node_10_1612263256833",
+      "previous_sibling": "node_6_1612249059392"
+    },
+    {
+      "type": "standard",
+      "title": "lightoff",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#LightOFF",
+      "dialog_node": "node_1_1612246889204",
+      "previous_sibling": "node_6_1612434734012"
+    },
+    {
+      "type": "standard",
+      "title": "humidity",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Humidity",
+      "dialog_node": "node_1_1612434692540",
+      "previous_sibling": "node_4_1612242730322"
+    },
+    {
+      "type": "standard",
+      "title": "temperature",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#temperature",
+      "dialog_node": "node_4_1612242730322",
+      "previous_sibling": "node_7_1612242662373"
+    },
+    {
+      "type": "frame",
+      "title": "text",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@message || #message",
+      "dialog_node": "node_6_1612249059392",
+      "previous_sibling": "node_8_1612434764795"
+    },
+    {
+      "type": "standard",
+      "title": "delete",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        },
+        "deleted": "<? context.remove('date') ?> <? context.remove('time') ?> <? context.remove('topic') ?>"
+      },
+      "parent": "node_10_1612263256833",
+      "conditions": "@reminder",
+      "dialog_node": "node_6_1612263736301"
+    },
+    {
+      "type": "standard",
+      "title": "fanon",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#fanon",
+      "dialog_node": "node_6_1612434734012",
+      "previous_sibling": "node_9_1612246340669"
+    },
+    {
+      "type": "standard",
+      "title": "greeting",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hola, How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Greet",
+      "dialog_node": "node_7_1612242662373",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "fanoff",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#fanoff",
+      "dialog_node": "node_8_1612434764795",
+      "previous_sibling": "node_1_1612246889204"
+    },
+    {
+      "type": "standard",
+      "title": "lighton",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Lighton",
+      "dialog_node": "node_9_1612246340669",
+      "previous_sibling": "node_1_1612434692540"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "lightoff"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1612246889204",
+      "conditions": "@lightoff",
+      "dialog_node": "response_2_1612246889208"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$name"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1612249059392",
+      "conditions": "$name",
+      "dialog_node": "response_3_1612249391954",
+      "previous_sibling": "node_10_1612250699717"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "lighton"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1612246340669",
+      "conditions": "@lighton",
+      "dialog_node": "response_5_1612246362017"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "humidity"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1612434692540",
+      "conditions": "@humidity",
+      "dialog_node": "response_5_1612434692544"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "time,$date,$time,$topic"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_10_1612263256833",
+      "conditions": "$date && $time && $topic",
+      "dialog_node": "response_6_1612263287580",
+      "previous_sibling": "slot_6_1612342077076"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "value"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1612242730322",
+      "conditions": "@temperature",
+      "dialog_node": "response_7_1612243128483"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "fanon"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1612434734012",
+      "conditions": "@fanon",
+      "dialog_node": "response_7_1612434734014"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "fanoff"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1612434764795",
+      "conditions": "@fanoff",
+      "dialog_node": "response_9_1612434764799"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1612249059392",
+      "variable": "$name",
+      "dialog_node": "slot_1_1612249082179",
+      "previous_sibling": "response_3_1612249391954"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1612263256833",
+      "variable": "$date",
+      "dialog_node": "slot_2_1612263312885",
+      "previous_sibling": "node_6_1612263736301"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1612263256833",
+      "variable": "$time",
+      "dialog_node": "slot_2_1612263356654",
+      "previous_sibling": "slot_2_1612263312885"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1612434692540",
+      "dialog_node": "slot_2_1612434692544",
+      "previous_sibling": "response_5_1612434692544"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1612242730322",
+      "dialog_node": "slot_6_1612243116088",
+      "previous_sibling": "response_7_1612243128483"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1612263256833",
+      "variable": "$topic",
+      "dialog_node": "slot_6_1612342077076",
+      "previous_sibling": "slot_2_1612263356654"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Temperature",
+  "language": "en",
+  "description": ""
+}

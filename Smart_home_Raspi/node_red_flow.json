@@ -1,0 +1,1 @@
+[{"id":"d0cc5375.40ffe","type":"http request","z":"ebdb4ae7.f5bd48","name":"","method":"GET","ret":"obj","paytoqs":"ignore","url":"https://4da1d4e4-ad43-44c2-ab4f-510850d2529e-bluemix.cloudant.com/sample/_all_docs?include_docs=true&limit=1","tls":"","persist":false,"proxy":"","authType":"basic","x":350,"y":180,"wires":[["b0ec2214.88c5d"]]}]
